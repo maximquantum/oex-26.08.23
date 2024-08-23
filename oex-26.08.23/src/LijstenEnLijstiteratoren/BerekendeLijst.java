@@ -47,5 +47,8 @@ public class BerekendeLijst extends Lijst {
 	public void removeLast() {
 		size--;
 	}
+	
+	@Override
+	public int getSize() { return size; }
 
 }

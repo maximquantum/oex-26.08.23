@@ -36,4 +36,7 @@ public class ArrayLijst extends Lijst {
 		elementen = Arrays.copyOf(elementen, elementen.length - 1);
 	}
 
+	@Override
+	public int getSize() { return elementen.length; }
+
 }
