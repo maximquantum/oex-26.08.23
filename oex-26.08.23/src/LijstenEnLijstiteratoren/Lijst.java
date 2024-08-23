@@ -59,5 +59,7 @@ public abstract class Lijst {
 	}
 	
 	public abstract int getSize();
+	
+	public abstract boolean heeftZelfdeGedragAls(Lijst andere);
 
 }

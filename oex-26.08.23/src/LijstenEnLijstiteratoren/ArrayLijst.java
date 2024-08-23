@@ -39,4 +39,9 @@ public class ArrayLijst extends Lijst {
 	@Override
 	public int getSize() { return elementen.length; }
 
+	@Override
+	public boolean heeftZelfdeGedragAls(Lijst andere) {
+		return andere instanceof ArrayLijst l && Arrays.equals(elementen, l.elementen);
+	}
+
 }

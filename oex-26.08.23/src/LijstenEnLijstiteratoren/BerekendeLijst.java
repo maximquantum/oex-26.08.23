@@ -51,4 +51,9 @@ public class BerekendeLijst extends Lijst {
 	@Override
 	public int getSize() { return size; }
 
+	@Override
+	public boolean heeftZelfdeGedragAls(Lijst andere) {
+		return andere instanceof BerekendeLijst l && size == l.size && (size == 0 || start == l.start);
+	}
+
 }
