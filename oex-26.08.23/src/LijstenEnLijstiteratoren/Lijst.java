@@ -22,7 +22,7 @@ public abstract class Lijst {
 	 * @creates | result
 	 * @peerObjects
 	 */
-	public Set<LijstIterator> getIteratoren() { // done 8
+	public Set<LijstIterator> getIteratoren() {
 		return Set.copyOf(iteratoren);
 	}
 	
