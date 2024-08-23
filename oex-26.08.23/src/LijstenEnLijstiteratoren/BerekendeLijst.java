@@ -36,5 +36,16 @@ public class BerekendeLijst extends Lijst {
 			throw new UnsupportedOperationException();
 		size++;
 	}
+	
+	/**
+	 * @pre | getElementen().length > 0
+	 * @mutates_proporties | getElementen()
+	 * @post | getElementen().length == old(getElementen()).length - 1
+	 * @post | Arrays.equals(getElementen(), 0, getElementen().length, old(getElementen()), 0, getElementen().length)
+	 */
+	@Override
+	public void removeLast() {
+		size--;
+	}
 
 }

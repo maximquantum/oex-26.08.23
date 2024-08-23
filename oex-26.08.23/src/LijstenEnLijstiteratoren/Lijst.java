@@ -17,6 +17,14 @@ public abstract class Lijst {
 	 * @post | Arrays.equals(getElementen(), 0, old(getElementen()).length, old(getElementen()), 0, old(getElementen()).length)
 	 * @post | getElementen()[getElementen().length - 1] == element
 	 */
-	public abstract void add(int element); // done 4
+	public abstract void add(int element);
+	
+	/**
+	 * @pre | getElementen().length > 0
+	 * @mutates_proporties | getElementen()
+	 * @post | getElementen().length == old(getElementen()).length - 1
+	 * @post | Arrays.equals(getElementen(), 0, getElementen().length, old(getElementen()), 0, getElementen().length)
+	 */
+	public abstract void removeLast();
 
 }
