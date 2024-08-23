@@ -17,6 +17,6 @@ public abstract class Lijst {
 	 * @post | Arrays.equals(getElementen(), 0, old(getElementen()).length, old(getElementen()), 0, old(getElementen()).length)
 	 * @post | getElementen()[getElementen().length - 1] == element
 	 */
-	public abstract void add(int element);
+	public abstract void add(int element); // done 4
 
 }
